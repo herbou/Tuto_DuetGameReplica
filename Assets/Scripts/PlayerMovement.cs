@@ -120,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
 
 			int currentLevelIndex = SceneManager.GetActiveScene ().buildIndex;
 
-			if (currentLevelIndex < SceneManager.sceneCount)
+			if (currentLevelIndex < SceneManager.sceneCountInBuildSettings)
 				SceneManager.LoadSceneAsync (++currentLevelIndex);
 		}
 	}
